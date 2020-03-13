@@ -1009,7 +1009,7 @@ class dump:
     snap = self.snaps[isnap]
 
     time = snap.time
-    box = [snap.xlo,snap.ylo,snap.zlo,snap.xhi,snap.yhi,snap.zhi]
+    box = [snap.xlo,snap.ylo,snap.zlo,snap.xhi,snap.yhi,snap.zhi,snap.xy,snap.xz,snap.yz]
     id = self.names["id"]
     type = self.names[self.atype]
     x = self.names["x"]
