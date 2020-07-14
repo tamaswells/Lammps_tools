@@ -120,7 +120,7 @@ if full_== True:
     for i in all_content[atomsbegin:atomsbegin+atomnums]:
         mass=float(mass_list[i.split()[2]])
         element_=element[judge_element(mass,masses)]
-        atoms.append((element_,[float(i.split()[4]),float(i.split()[5]),float(i.split()[6])],int(i.split()[1]))) #将原子的元素（返回的最后一个元素），原子的坐标（第二个元素）和是否被限制的信息打包为一个元祖，加到原子信息列表里面。
+        atoms.append((element_,[float(i.split()[4]),float(i.split()[5]),float(i.split()[6])],int(i.split()[0]))) #将原子的元素（返回的最后一个元素），原子的坐标（第二个元素）和是否被限制的信息打包为一个元祖，加到原子信息列表里面。
 else:
     if charge_ == False:
         for i in all_content[atomsbegin:atomsbegin+atomnums]:
